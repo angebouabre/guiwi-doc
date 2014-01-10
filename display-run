@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+list_screens="SPEC_UI_1_LOGIN.png
+SPEC_UI_2_GLOBAL_100.png
+SPEC_UI_2_GLOBAL_200_SEL_PRJ1.png
+SPEC_UI_2_GLOBAL_300_PRJ1.png
+SPEC_UI_3_MACRO_100_PRJ1.png
+SPEC_UI_3_MACRO_200_PRJ1.png
+"
+
+for screen in ${list_screens}
+do
+    printf "... %s\n" ${screen}
+    display ${screen}
+done
+
